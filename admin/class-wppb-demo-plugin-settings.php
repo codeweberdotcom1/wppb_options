@@ -56,8 +56,8 @@ class Wppb_Demo_Admin_Settings {
 
 		//Add the menu to the Plugins set of menu items
 		add_plugins_page(
-			'WPPB Demo Options', 					// The title to be displayed in the browser window for this page.
-			'WPPB Demo Options',					// The text to be displayed for this menu item
+			'Admin Options', 					// The title to be displayed in the browser window for this page.
+			'Admin Options',					// The text to be displayed for this menu item
 			'manage_options',					// Which type of users can see this menu item
 			'wppb_demo_options',			// The unique ID - that is, the slug - for this menu item
 			array( $this, 'render_settings_page_content')				// The name of the function to call when rendering this menu's page
