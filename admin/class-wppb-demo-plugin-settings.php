@@ -56,8 +56,8 @@ class Wppb_Demo_Admin_Settings {
 
 		//Add the menu to the Plugins set of menu items
 		add_plugins_page(
-			'Admin Options', 					// The title to be displayed in the browser window for this page.
-			'Admin Options',					// The text to be displayed for this menu item
+			'WPPB Demo Options', 					// The title to be displayed in the browser window for this page.
+			'WPPB Demo Options',					// The text to be displayed for this menu item
 			'manage_options',					// Which type of users can see this menu item
 			'wppb_demo_options',			// The unique ID - that is, the slug - for this menu item
 			array( $this, 'render_settings_page_content')				// The name of the function to call when rendering this menu's page
@@ -106,31 +106,17 @@ class Wppb_Demo_Admin_Settings {
 	 */
 	public function default_input_options() {
 
-    $defaults = array(
-        'input_example'		=>	'default input example',
-        'textarea_example'	=>	'',
-        'checkbox_example'	=>	'',
-        'radio_example'		=>	'2',
-        'time_options'		=>	'default'
-    );
+		$defaults = array(
+			'input_example'		=>	'default input example',
+			'textarea_example'	=>	'',
+			'checkbox_example'	=>	'',
+			'radio_example'		=>	'2',
+			'time_options'		=>	'default'
+		);
 
-    return $defaults;
+		return $defaults;
 
-}
-
-    public function default_seo_options() {
-
-        $defaults = array(
-            'input_example'		=>	'default input example',
-            'textarea_example'	=>	'',
-            'checkbox_example'	=>	'',
-            'radio_example'		=>	'2',
-            'time_options'		=>	'default'
-        );
-
-        return $defaults;
-
-    }
+	}
 
 	/**
 	 * Renders a simple page to display for the theme menu defined above.
@@ -140,7 +126,7 @@ class Wppb_Demo_Admin_Settings {
 		<!-- Create a header in the default WordPress 'wrap' container -->
 		<div class="wrap">
 
-			<h2><?php _e( 'Admin Options', 'wppb-demo-plugin' ); ?></h2>
+			<h2><?php _e( 'WPPB Demo Options', 'wppb-demo-plugin' ); ?></h2>
 			<?php settings_errors(); ?>
 
 			<?php if( isset( $_GET[ 'tab' ] ) ) {
@@ -149,8 +135,6 @@ class Wppb_Demo_Admin_Settings {
 				$active_tab = 'social_options';
 			} else if( $active_tab == 'input_examples' ) {
 				$active_tab = 'input_examples';
-            } else if( $active_tab == 'seo_examples' ) {
-                $active_tab = 'seo_examples';
 			} else {
 				$active_tab = 'display_options';
 			} // end if/else ?>
@@ -159,7 +143,6 @@ class Wppb_Demo_Admin_Settings {
 				<a href="?page=wppb_demo_options&tab=display_options" class="nav-tab <?php echo $active_tab == 'display_options' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Display Options', 'wppb-demo-plugin' ); ?></a>
 				<a href="?page=wppb_demo_options&tab=social_options" class="nav-tab <?php echo $active_tab == 'social_options' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Social Options', 'wppb-demo-plugin' ); ?></a>
 				<a href="?page=wppb_demo_options&tab=input_examples" class="nav-tab <?php echo $active_tab == 'input_examples' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Input Examples', 'wppb-demo-plugin' ); ?></a>
-                <a href="?page=wppb_demo_options&tab=seo_examples" class="nav-tab <?php echo $active_tab == 'seo_examples' ? 'nav-tab-active' : ''; ?>"><?php _e( 'Seo Examples', 'wppb-demo-plugin' ); ?></a>
 			</h2>
 
 			<form method="post" action="options.php">
@@ -175,18 +158,12 @@ class Wppb_Demo_Admin_Settings {
 					settings_fields( 'wppb_demo_social_options' );
 					do_settings_sections( 'wppb_demo_social_options' );
 
-
-
-                } elseif( $active_tab == 'wppb_demo_input_examples' ) {
+				} else {
 
 					settings_fields( 'wppb_demo_input_examples' );
 					do_settings_sections( 'wppb_demo_input_examples' );
 
-				}  else {
-                    settings_fields( 'wppb_demo_seo_examples' );
-                    do_settings_sections( 'wppb_demo_seo_examples' );
-				    // end if/else
-                }
+				} // end if/else
 
 				submit_button();
 
@@ -233,13 +210,6 @@ class Wppb_Demo_Admin_Settings {
 		var_dump($options);
 		echo '<p>' . __( 'Provides examples of the five basic element types.', 'wppb-demo-plugin' ) . '</p>';
 	} // end general_options_callback
-
-
-    public function seo_examples_callback() {
-        $options = get_option('wppb_demo_seo_examples');
-        var_dump($options);
-        echo '<p>' . __( 'Provides examples of the five basic element types.', 'wppb-demo-plugin' ) . '</p>';
-    } // end general_options_callback
 
 
 	/**
@@ -428,54 +398,6 @@ class Wppb_Demo_Admin_Settings {
 		);
 
 	}
-
-
-    /**
-     * Initializes the theme's input example by registering the Sections,
-     * Fields, and Settings. This particular group of options is used to demonstration
-     * validation and sanitization.
-     *
-     * This function is registered with the 'admin_init' hook.
-     */
-    public function initialize_seo_examples() {
-        //delete_option('wppb_demo_input_examples');
-        if( false == get_option( 'wppb_demo_seo_examples' ) ) {
-            $default_array = $this->default_input_options();
-            update_option( 'wppb_demo_seo_examples', $default_array );
-        } // end if
-
-        add_settings_section(
-            'seo_examples_section',
-            __( 'SEO Examples', 'wppb-demo-plugin' ),
-            array( $this, 'seo_examples_callback'),
-            'wppb_demo_seo_examples'
-        );
-
-        add_settings_field(
-            'SEO Element',
-            __( 'Input Element', 'wppb-demo-plugin' ),
-            array( $this, 'input_element_callback'),
-            'wppb_demo_seo_examples',
-            'seo_examples_section'
-        );
-
-
-
-        add_settings_field(
-            'SEO Element',
-            __( 'Select Element', 'wppb-demo-plugin' ),
-            array( $this, 'select_element_callback'),
-            'wppb_demo_seo_examples',
-            'seo_examples_section'
-        );
-
-        register_setting(
-            'wppb_demo_seo_examples',
-            'wppb_demo_seo_examples',
-            array( $this, 'validate_input_examples')
-        );
-
-    }
 
 	/**
 	 * This function renders the interface elements for toggling the visibility of the header element.

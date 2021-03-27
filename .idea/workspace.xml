@@ -13,20 +13,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="class-wppb-demo-plugin-admin.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="class-wppb-demo-plugin-admin.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-admin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="1077">
               <caret line="120" column="102" selection-start-line="120" selection-start-column="80" selection-end-line="120" selection-end-column="102" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="class-wppb-demo-plugin-settings.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="class-wppb-demo-plugin-settings.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="238" column="56" lean-forward="true" selection-start-line="238" selection-start-column="56" selection-end-line="238" selection-end-column="56" />
+            <state relative-caret-position="17">
+              <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="17" />
               <folding>
                 <element signature="e#25#31#0" expanded="true" />
                 <element signature="e#26#32#0" expanded="true" />
@@ -41,9 +41,14 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>wppb_demo_options</find>
+      <find>wppb</find>
     </findStrings>
+    <replaceStrings>
+      <replace>zw</replace>
+    </replaceStrings>
     <dirStrings>
       <dir>C:\Users\Java\Documents\GitHub\wppb-demo-plugin-master\wppb_options\admin</dir>
+      <dir>C:\Users\Java\Documents\GitHub\wppb-demo-plugin-master\wppb_options</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -53,6 +58,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/admin/class-wppb-demo-plugin-settings.php" />
+        <option value="$PROJECT_DIR$/admin/class-wppb-demo-plugin-admin.php" />
       </list>
     </option>
   </component>
@@ -65,7 +71,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -133,16 +139,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616832549135</updated>
-      <workItem from="1616832550473" duration="1002000" />
+      <workItem from="1616832550473" duration="1103000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1002000" />
+    <option name="totallyTimeSpent" value="1103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
@@ -173,25 +178,25 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-admin.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
-          <caret line="120" column="102" selection-start-line="120" selection-start-column="80" selection-end-line="120" selection-end-column="102" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/admin/partials/wppb-demo-plugin-admin-display.php">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="238" column="56" lean-forward="true" selection-start-line="238" selection-start-column="56" selection-end-line="238" selection-end-column="56" />
+        <state relative-caret-position="17">
+          <caret line="58" column="17" lean-forward="true" selection-start-line="58" selection-start-column="13" selection-end-line="58" selection-end-column="17" />
           <folding>
             <element signature="e#25#31#0" expanded="true" />
             <element signature="e#26#32#0" expanded="true" />
             <element signature="e#25#31#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1077">
+          <caret line="120" column="102" selection-start-line="120" selection-start-column="80" selection-end-line="120" selection-end-column="102" />
         </state>
       </provider>
     </entry>
