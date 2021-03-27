@@ -126,7 +126,7 @@ class Wppb_Demo_Admin_Settings {
 		<!-- Create a header in the default WordPress 'wrap' container -->
 		<div class="wrap">
 
-			<h2><?php _e( 'WPPB Demo Options', 'wppb-demo-plugin' ); ?></h2>
+			<h2><?php _e( 'Admin Options', 'wppb-demo-plugin' ); ?></h2>
 			<?php settings_errors(); ?>
 
 			<?php if( isset( $_GET[ 'tab' ] ) ) {
