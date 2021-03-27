@@ -235,7 +235,7 @@ class Wppb_Demo_Admin_Settings {
 	} // end general_options_callback
 
 
-    public function input_examples_callback() {
+    public function seo_examples_callback() {
         $options = get_option('wppb_demo_seo_examples');
         var_dump($options);
         echo '<p>' . __( 'Provides examples of the five basic element types.', 'wppb-demo-plugin' ) . '</p>';

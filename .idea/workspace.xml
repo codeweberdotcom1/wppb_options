@@ -25,8 +25,8 @@
       <file leaf-file-name="class-wppb-demo-plugin-settings.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-settings.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="584">
-              <caret line="464" column="16" selection-start-line="464" selection-start-column="16" selection-end-line="464" selection-end-column="16" />
+            <state relative-caret-position="312">
+              <caret line="238" column="56" lean-forward="true" selection-start-line="238" selection-start-column="56" selection-end-line="238" selection-end-column="56" />
               <folding>
                 <element signature="e#25#31#0" expanded="true" />
                 <element signature="e#26#32#0" expanded="true" />
@@ -65,7 +65,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -133,12 +133,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1616832549135</updated>
-      <workItem from="1616832550473" duration="956000" />
+      <workItem from="1616832550473" duration="1002000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="956000" />
+    <option name="totallyTimeSpent" value="1002000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -185,8 +185,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/admin/class-wppb-demo-plugin-settings.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="464" column="16" selection-start-line="464" selection-start-column="16" selection-end-line="464" selection-end-column="16" />
+        <state relative-caret-position="312">
+          <caret line="238" column="56" lean-forward="true" selection-start-line="238" selection-start-column="56" selection-end-line="238" selection-end-column="56" />
           <folding>
             <element signature="e#25#31#0" expanded="true" />
             <element signature="e#26#32#0" expanded="true" />
